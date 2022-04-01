@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>TubeArchivist</Name>
+  <Repository>bbilly1/tubearchivist</Repository>
+  <Registry>https://hub.docker.com/r/bbilly1/tubearchivist/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/114073-support-crocs-tube-archivist/</Support>
+  <Project>https://github.com/bbilly1/tubearchivist</Project>
+  <Overview>Your self hosted YouTube media server.&#xD;
+&#xD;
+IMPORTANT: This container relies on ElasticSearch as well as RedisJson.&#xD;
+&#xD;
+Install "TubeArchivist-ES" as well as "TubeArchivist-RedisJSON" BEFORE running "TubeArchivist".&#xD;
+&#xD;
+Both can be found in the Community Applications.&#xD;
+</Overview>
+  <Category>Backup: Downloaders: MediaApp:Video MediaServer:Video</Category>
+  <WebUI>http://[IP]:[PORT:8000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/6n4ljjQ.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1639686981</DateInstalled>
+  <DonateText>Buy the creator a beer!</DonateText>
+  <DonateLink>paypal.me/bbilly1</DonateLink>
+  <Description>Your self hosted YouTube media server.&#xD;
+&#xD;
+IMPORTANT: This container relies on ElasticSearch as well as RedisJson.&#xD;
+&#xD;
+Install "TubeArchivist-ES" as well as "TubeArchivist-RedisJSON" BEFORE running "TubeArchivist".&#xD;
+&#xD;
+Both can be found in the Community Applications.&#xD;
+</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8000</HostPort>
+        <ContainerPort>8000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/</HostDir>
+      <ContainerDir>/youtube</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/TubeArchivist/</HostDir>
+      <ContainerDir>/cache</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>http://IP:9200</Value>
+      <Name>ES_URL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>IP</Value>
+      <Name>REDIS_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>tubearchivist</Value>
+      <Name>TA_USERNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>verysecret</Value>
+      <Name>TA_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>verysecret</Value>
+      <Name>ELASTIC_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>America/New_York</Value>
+      <Name>TZ</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1000</Value>
+      <Name>HOST_GID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1000</Value>
+      <Name>HOST_UID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Port" Target="8000" Default="" Mode="tcp" Description="Container Port: 8000" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
+  <Config Name="Youtube Media Path" Target="/youtube" Default="/youtube" Mode="rw" Description="Container Path: /youtube" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/</Config>
+  <Config Name="Appdata" Target="/cache" Default="/cache" Mode="rw" Description="Container Path: /cache" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/TubeArchivist/</Config>
+  <Config Name="TA Username" Target="TA_USERNAME" Default="" Mode="" Description="Container Variable: TA_USERNAME" Type="Variable" Display="always" Required="false" Mask="false">tubearchivist</Config>
+  <Config Name="TA Password" Target="TA_PASSWORD" Default="" Mode="" Description="Container Variable: TA_PASSWORD" Type="Variable" Display="always" Required="false" Mask="true">verysecret</Config>
+  <Config Name="Redis" Target="REDIS_HOST" Default="" Mode="" Description="Container Variable: REDIS_HOST" Type="Variable" Display="always" Required="false" Mask="false">IP</Config>
+  <Config Name="ElasticSearch Password" Target="ELASTIC_PASSWORD" Default="" Mode="" Description="Container Variable: ELASTIC_PASSWORD" Type="Variable" Display="always" Required="false" Mask="true">verysecret</Config>
+  <Config Name="ElasticSearch" Target="ES_URL" Default="" Mode="" Description="Container Variable: ES_URL" Type="Variable" Display="always" Required="false" Mask="false">http://IP:9200</Config>
+  <Config Name="Time Zone" Target="TZ" Default="America/New_York" Mode="" Description="Container Variable: TZ" Type="Variable" Display="always" Required="false" Mask="false">America/New_York</Config>
+  <Config Name="GID" Target="HOST_GID" Default="" Mode="" Description="Container Variable: HOST_GID" Type="Variable" Display="advanced" Required="false" Mask="false">1000</Config>
+  <Config Name="UID" Target="HOST_UID" Default="" Mode="" Description="Container Variable: HOST_UID" Type="Variable" Display="advanced" Required="false" Mask="false">1000</Config>
+</Container>
