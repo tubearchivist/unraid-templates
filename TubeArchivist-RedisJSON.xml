@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>TubeArchivist-RedisJSON</Name>
+  <Repository>redislabs/rejson:latest</Repository>
+  <Registry>https://hub.docker.com/r/redislabs/rejson/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/114073-support-crocs-tube-archivist/</Support>
+  <Project>https://github.com/RedisJSON/RedisJSON</Project>
+  <Overview>This is a dependancy container for the application "TubeArchivist"&#xD;
+&#xD;
+Install this and "TubeArchivist-ES" before trying to run "TubeArchivist"&#xD;
+&#xD;
+</Overview>
+  <Category>MediaServer:Other</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/dtGJa5y.jpeg</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1634503543</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>This is a dependancy container for the application "TubeArchivist"&#xD;
+&#xD;
+Install this and "TubeArchivist-ES" before trying to run "TubeArchivist"&#xD;
+&#xD;
+</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>6379</HostPort>
+        <ContainerPort>6379</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/TubeArchivist/redis</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Host Port 1" Target="6379" Default="" Mode="tcp" Description="Container Port: 6379" Type="Port" Display="always" Required="false" Mask="false">6379</Config>
+  <Config Name="Data" Target="/data" Default="" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/TubeArchivist/redis</Config>
+</Container>
