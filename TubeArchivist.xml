@@ -26,13 +26,8 @@ Both can be found in the Community Applications.</Overview>
   <DateInstalled>1648948191</DateInstalled>
   <DonateText>Buy the creator a beer!</DonateText>
   <DonateLink/>
-  <Requires>1111111111111111111111&#xD;
-&#xD;
-2222222222222222222222&#xD;
-&#xD;
-3333333333333333333&#xD;
-&#xD;
-444444444444444444444</Requires>
+  <Requires>TubeArchivist-ES and TubeArchivist-RedisJSON
+</Requires>
   <Config Name="Port" Target="8000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
   <Config Name="Youtube Media Path" Target="/youtube" Default="/youtube" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Root/video/test/</Config>
   <Config Name="Appdata" Target="/cache" Default="/cache" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/TubeArchivist/</Config>
