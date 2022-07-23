@@ -21,6 +21,7 @@
   <DonateText>Buy the creator a beer!</DonateText>
   <DonateLink/>
   <Requires>TubeArchivist-ES and TubeArchivist-RedisJSON</Requires>
+  <Config Name="HOST" Target="TA_HOST" Default="" Mode="" Description="https://github.com/tubearchivist/tubearchivist#tube-archivist" Type="Variable" Display="always" Required="false" Mask="false">[IP]</Config>
   <Config Name="Port" Target="8000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
   <Config Name="Youtube Media Path" Target="/youtube" Default="/youtube" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/</Config>
   <Config Name="Appdata" Target="/cache" Default="/cache" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/TubeArchivist/</Config>
