@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>TubeArchivist-ES</Name>
-  <Repository>bbilly1/tubearchivist-es:latest</Repository>
+  <Repository>tubearchivist/tubearchivist-es:latest</Repository>
   <Registry>https://hub.docker.com/_/elasticsearch</Registry>
   <Network>bridge</Network>
   <MyIP/>
