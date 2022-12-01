@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>TubeArchivist</Name>
-  <Repository>bbilly1/tubearchivist:latest</Repository>
-  <Registry>https://hub.docker.com/r/bbilly1/tubearchivist/</Registry>
+  <Repository>tubearchivist/tubearchivist:latest</Repository>
+  <Registry>https://hub.docker.com/r/tubearchivist/tubearchivist/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/114073-support-crocs-tube-archivist/</Support>
-  <Project>https://github.com/bbilly1/tubearchivist</Project>
+  <Project>https://github.com/tubearchivist/tubearchivist</Project>
   <Overview>Your self hosted YouTube media server.</Overview>
   <Category>Backup: Downloaders: MediaApp:Video MediaServer:Video</Category>
   <WebUI>http://[IP]:[PORT:8000]</WebUI>
