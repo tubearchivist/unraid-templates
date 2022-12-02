@@ -31,6 +31,6 @@
   <Config Name="ElasticSearch Password" Target="ELASTIC_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true">verysecret</Config>
   <Config Name="ElasticSearch" Target="ES_URL" Default="" Mode="" Description="leave the 'http://'" Type="Variable" Display="always" Required="false" Mask="false">http://HOSTIPADDRESS:9200</Config>
   <Config Name="Time Zone" Target="TZ" Default="America/New_York" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">America/Chicago</Config>
-  <Config Name="GID" Target="HOST_GID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">1000</Config>
-  <Config Name="UID" Target="HOST_UID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">1000</Config>
+  <Config Name="GID" Target="HOST_GID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <Config Name="UID" Target="HOST_UID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
 </Container>
