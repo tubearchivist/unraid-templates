@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>TubeArchivist</Name>
   <Repository>tubearchivist/tubearchivist:latest</Repository>
-  <Registry>https://hub.docker.com/r/tubearchivist/tubearchivist/</Registry>
+  <Registry>https://hub.docker.com/r/bbilly1/tubearchivist/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
