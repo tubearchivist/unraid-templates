@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>TubeArchivist</Name>
-  <Repository>tubearchivist/tubearchivist:latest</Repository>
+  <Repository>bbilly1/tubearchivist:latest</Repository>
   <Registry>https://hub.docker.com/r/bbilly1/tubearchivist/</Registry>
   <Network>bridge</Network>
   <MyIP/>
