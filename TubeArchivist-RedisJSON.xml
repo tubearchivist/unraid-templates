@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>TubeArchivist-RedisJSON</Name>
   <Repository>redislabs/rejson:latest</Repository>
-  <Registry>https://hub.docker.com/r/redislabs/rejson/</Registry>
+  <Registry>https://hub.docker.com/r/redis/redis-stack-server/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
