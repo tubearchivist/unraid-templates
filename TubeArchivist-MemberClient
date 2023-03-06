@@ -27,6 +27,7 @@ This will keep a websocket connection open listening for notifications for new v
   <Config Name="TA URL" Target="TA_URL" Default="" Mode="" Description="URL of your TubeArchivist" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="TubeArchivist API" Target="TA_TOKEN" Default="" Mode="" Description="Obtain from TubeArchivist settings page" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="Youtube Media Path" Target="/youtube" Default="/youtube" Mode="rw" Description="Location for your TubeArchivist media" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Media Import Path" Target="/cache/import" Default="/cache/import" Mode="rw" Description="Location where received media will be located" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/TubeArchivist/import/</Config>
   <Config Name="Time Zone" Target="TZ" Default="America/New_York" Mode="" Description="Timezone" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="GID" Target="HOST_GID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
   <Config Name="UID" Target="HOST_UID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
