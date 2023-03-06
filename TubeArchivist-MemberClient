@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>TubeArchivist-MemberClient</Name>
+  <Repository>bbilly1/tubearchivist-client</Repository>
+  <Registry>https://hub.docker.com/r/bbilly1/tubearchivist-client/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/114073-support-crocs-tube-archivist/</Support>
+  <Project>https://github.com/tubearchivist/members</Project>
+  <Overview>This is a client container for https://members.tubearchivist.com.
+
+This will keep a websocket connection open listening for notifications for new videos. Add your favorite channels to monitor on the subscriptions page.  Subscription is required.</Overview>
+  <Category>Backup: Downloaders: MediaServer:Video</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/tubearchivist/unraid-templates/master/TubeArchivist-MemberClient.xml</TemplateURL>
+  <Icon>https://members.tubearchivist.com/static/img/tube-archivist-icon.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled/>
+  <DonateText>Buy the creator a coffee!</DonateText>
+  <DonateLink>https://ko-fi.com/bbilly1</DonateLink>
+  <Requires>TubeArchivist, TubeArchivist-ES and TubeArchivist-RedisJSON</Requires>
+  <Config Name="Member Page Token" Target="MB_TOKEN" Default="" Mode="" Description="Obtain from https://members.tubearchivist.com/profile/" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="TA URL" Target="TA_URL" Default="" Mode="" Description="URL of your TubeArchivist" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="TubeArchivist API" Target="TA_TOKEN" Default="" Mode="" Description="Obtain from TubeArchivist settings page" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Youtube Media Path" Target="/youtube" Default="/youtube" Mode="rw" Description="Location for your TubeArchivist media" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Time Zone" Target="TZ" Default="America/New_York" Mode="" Description="Timezone" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="GID" Target="HOST_GID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <Config Name="UID" Target="HOST_UID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+</Container>
