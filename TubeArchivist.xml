@@ -26,7 +26,7 @@
   <Config Name="Youtube Media Path" Target="/youtube" Default="/youtube" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/</Config>
   <Config Name="Appdata" Target="/cache" Default="/cache" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/TubeArchivist/</Config>
   <Config Name="TA Username" Target="TA_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">tubearchivist</Config>
-  <Config Name="TA Password" Target="TA_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true">password</Config>
+  <Config Name="TA Password" Target="TA_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">verysecret</Config>
   <Config Name="Redis" Target="REDIS_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">HOST IP ADDRESS</Config>
   <Config Name="ElasticSearch Password" Target="ELASTIC_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true">verysecret</Config>
   <Config Name="ElasticSearch" Target="ES_URL" Default="" Mode="" Description="leave the 'http://'" Type="Variable" Display="always" Required="false" Mask="false">http://HOSTIPADDRESS:9200</Config>
