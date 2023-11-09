@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+  <Icon>https://raw.githubusercontent.com/tubearchivist/unraid-templates/main/TubeArchivist_Logo.png</Icon>
+  <Profile>Your selfhosted YouTube media server!</Profile>
+  <DonateLink>https://github.com/tubearchivist/tubearchivist#donate</DonateLink>
+  <DonateText>If you find this project useful, please consider Donating.</DonateText>
+  <WebPage>https://www.tubearchivist.com/</WebPage>
+  <Discord>https://www.tubearchivist.com/discord</Discord>
+</Maintainer>
