@@ -1,32 +1,28 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>TubeArchivist-Client</Name>
+  <Name>TubeArchivist-Members</Name>
   <Repository>bbilly1/tubearchivist-client:latest</Repository>
   <Registry>https://hub.docker.com/r/bbilly1/tubearchivist-client</Registry>
   <Network>bridge</Network>
-  <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
-  <Project/>
+  <Support>https://forums.unraid.net/topic/114073-support-crocs-tube-archivist/</Support>
+  <Project>https://github.com/tubearchivist/members</Project>
   <Overview>This is a client container for https://members.tubearchivist.com subscribers only.&#xD;
 &#xD;
 This will keep a websocket connection open listening for notifications for new videos. Add your favorite channels to monitor on the subscriptions page.&#xD;
 https://members.tubearchivist.com/subscriptions/</Overview>
-  <Category/>
+  <Category>Downloaders</Category>
   <WebUI>https://members.tubearchivist.com/subscriptions/</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/tubearchivist/unraid-templates/master/TubeArchivist-Members.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/tubearchivist/members/master/assets/tube-archivist-icon.png</Icon>
-  <ExtraParams>--restart always</ExtraParams>
-  <PostArgs/>
-  <CPUset/>
-  <DateInstalled>1699593716</DateInstalled>
-  <DonateText/>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <DonateText>Subscription required for functionality</DonateText>
   <DonateLink>https://github.com/tubearchivist/tubearchivist#donate</DonateLink>
-  <Requires>TubeArchivist and Sponsor Subscription</Requires>
+  <Requires>Sponsor Subscription, TubeArchivist, TubeArchivist-ES, TubeArchivist-RedisJSON</Requires>
   <Config Name="Member API Token" Target="MB_TOKEN" Default="" Mode="" Description="This is the access token you can find on your members profile page&#13;&#10;https://members.tubearchivist.com/profile/" Type="Variable" Display="always" Required="false" Mask="true"></Config>
   <Config Name="TubeArchivist API Token" Target="TA_TOKEN" Default="" Mode="" Description="This is the access token for your Tube Archivist server, you can find that on the settings page." Type="Variable" Display="always" Required="false" Mask="true"></Config>
   <Config Name="TubeArchivist URL" Target="TA_URL" Default="" Mode="" Description="Define the URL where your Tube Archivist instance is reachable, add protocol and port number if needed." Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Timezone" Target="TZ" Default="" Mode="" Description="Defaults to UTC, optionally configure your timezone to adjust log output timestamps." Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="Host Key 5" Target="AUTOSTART" Default="|True" Mode="" Description="Automatically prioritize and start videos sent from this service, requires Tube Archivist v0.3.6+ for API compatibility. Set to anything, except empty string" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Autostart" Target="AUTOSTART" Default="|True" Mode="" Description="Automatically prioritize and start videos sent from this service, requires Tube Archivist v0.3.6+ for API compatibility. Set to anything, except empty string" Type="Variable" Display="always" Required="false" Mask="false"></Config>
 </Container>
