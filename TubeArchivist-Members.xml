@@ -12,7 +12,7 @@
 &#xD;
 This will keep a websocket connection open listening for notifications for new videos. Add your favorite channels to monitor on the subscriptions page.&#xD;
 https://members.tubearchivist.com/subscriptions/</Overview>
-  <Category>Downloaders</Category>
+  <Category>Downloaders:</Category>
   <WebUI>https://members.tubearchivist.com/subscriptions/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/tubearchivist/unraid-templates/master/TubeArchivist-Members.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/tubearchivist/members/master/assets/tube-archivist-icon.png</Icon>
