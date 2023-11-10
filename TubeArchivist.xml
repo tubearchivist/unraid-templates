@@ -19,7 +19,7 @@
   <CPUset/>
   <DateInstalled>1669850852</DateInstalled>
   <DonateText>If you're enjoying this project, consider donating!</DonateText>
-  <DonateLink>https://github.com/tubearchivist/tubearchivist#donate<DonateLink/>
+  <DonateLink>https://github.com/tubearchivist/tubearchivist#donate</DonateLink>
   <Requires>TubeArchivist-ES and TubeArchivist-RedisJSON</Requires>
   <Config Name="HOST" Target="TA_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">IP ADDRESSES</Config>
   <Config Name="Port" Target="8000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
