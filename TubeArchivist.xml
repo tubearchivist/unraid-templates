@@ -20,14 +20,14 @@
   <DateInstalled>1669850852</DateInstalled>
   <DonateText>If you're enjoying this project, consider donating!</DonateText>
   <DonateLink>https://github.com/tubearchivist/tubearchivist#donate</DonateLink>
-  <Requires>TubeArchivist-ES and TubeArchivist-RedisJSON</Requires>
+  <Requires>TubeArchivist-ES and TubeArchivist-Redis</Requires>
   <Config Name="HOST" Target="TA_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">IP ADDRESSES</Config>
   <Config Name="Port" Target="8000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
   <Config Name="Youtube Media Path" Target="/youtube" Default="/youtube" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/</Config>
   <Config Name="Appdata" Target="/cache" Default="/cache" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/TubeArchivist/</Config>
   <Config Name="TA Username" Target="TA_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">tubearchivist</Config>
   <Config Name="TA Password" Target="TA_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">verysecret</Config>
-  <Config Name="Redis" Target="REDIS_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">HOST IP ADDRESS</Config>
+  <Config Name="Redis" Target="REDIS_CON" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">redis://archivist-redis:6379</Config>
   <Config Name="ElasticSearch Password" Target="ELASTIC_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">verysecret</Config>
   <Config Name="ElasticSearch" Target="ES_URL" Default="" Mode="" Description="leave the 'http://'" Type="Variable" Display="always" Required="false" Mask="false">http://HOSTIPADDRESS:9200</Config>
   <Config Name="Time Zone" Target="TZ" Default="America/New_York" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">America/Chicago</Config>
